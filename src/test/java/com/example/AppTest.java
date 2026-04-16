@@ -1,20 +1,11 @@
 package com.example;
-
-import static org.junit.Assert.assertTrue;
-
+import static org.junit.Assert.*;
 import org.junit.Test;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-{
-    /**
-     * Rigorous Test :-)
-     */
+public class PrimeCheckerTest {
     @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
+    public void testPrime() {
+        assertTrue(PrimeChecker.isPrime(7));
+        assertFalse(PrimeChecker.isPrime(4));
     }
 }
